@@ -46,3 +46,6 @@ label{
 input{
 	display: table-cell;
 }
+.help-text-white {
+  color: white;
+}

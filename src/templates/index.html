@@ -8,42 +8,27 @@
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 <body>
   <link rel="stylesheet" href="{% static 'css/index.css' %}">
-
   <script src="{% static 'js/body_fade.js' %}"></script>
-  <div class="row">
-    <p> <br><br><br> </p>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h1>C-MIX</h1>
-      <p> <br></p>
-      <p>Le club de DJs, producteurs et ambianceurs de CentraleSupélec. <br></p>
-      <p>Que ce soit pour vos events associatifs, vos TU ou vos apéros de campagne, nous sommes là pour
-        vous proposer des sessions de mix réalisées sur mesure pour ambiancer au mieux vos soirées.
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h1></h1>
-      <h2>Premiers sur la musique électronique à CS</h2>
-    </div>
-    <div class="col">
-      <p> <br></p>
-      <p>DJs émérites, mais pas seulement !<br><br>
-      <p>Notre pôle PROD' forme actuellement les futurs producteurs qui feront bouger le campus, et prépare des projets
-        pour ravir vos oreilles !<br></p>
-      <p>Si tu es intéressé.e, n'hésite pas à nous rejoindre sur <a href= "https://chat.whatsapp.com/IEfOGmCMDBWKEVlf7Xsy5g"> WhatsApp</a> !<br><br> </p>
-      <p>Toujours tourné vers le développement de manières innovantes de faire vivre la musique, nous lançons cette
-        année le pôle LIVE !<br></p>
-      <p>De véritables shows, où nous construisons la musique à base de samples, de boucles, de synthés, de contrôleurs
-        MIDI...<br></p>
-      <p>Plus d'infos arriveront prochainement !</p>
-    </div>
-  </div>
-  <div class="row"></div>
-  <div class="row"></div>
 
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h1>C-MIX</h1>
+        <p>Le club de DJs, producteurs et ambianceurs de CentraleSupélec.</p>
+        <p>Que ce soit pour vos events associatifs, vos TU ou vos apéros de campagne, nous sommes là pour
+          vous proposer des sessions de mix réalisées sur mesure pour ambiancer au mieux vos soirées.</p>
+
+        <p>Retrouvez sur la photo l'équipe du mandat P27</p>
+
+        <a href="{% url 'presta:reserver' %}" class="btn btn-primary mt-3">Demander une prestation 💽</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{% static 'img/shooting-p27/tous-7.jpg' %}" alt="L'équipe P27" class="img-fluid"
+          style="width: 100%; height: auto; max-width: 850px;">
+
+      </div>
+    </div>
+  </div>
 </body>
 
 {% endblock %}

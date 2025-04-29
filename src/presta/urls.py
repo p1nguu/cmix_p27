@@ -9,7 +9,7 @@ app_name = 'presta'
 urlpatterns = [
     path('contact/', views.contactView, name='contact'),
     path('success/', views.successView, name='success'),
-    path('name/', views.get_name, name='name'),
+    path('reserver/', views.get_name, name='reserver'),
     path('list_prestas/', views.list_prestas, name='list_prestas'),
     path('<int:presta_id>/', views.details_prestas, name='details_prestas'),
 ]
